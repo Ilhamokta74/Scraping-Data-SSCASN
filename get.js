@@ -37,6 +37,10 @@ const ambilDanSimpanData = async (apiUrl, namaFile, jumlahDataPerPermintaan, jum
         const responseData = response.data.data.data;
 
         semuaData = semuaData.concat(responseData);
+        console.log(semuaData.length);
+
+        // JANGAN DI HAPUS, INI FUNGSINYA UNTUK MATIIN BOT JIKA SUDAH SELESAI MENDAPATKAN SEMUA DATA
+        const mati = response.data.data.data[0].formasi_id;
 
       } catch (error) {
         semuaData.sort((a, b) => new Date(a.jumlah_formasi) - new Date(b.jumlah_formasi));
