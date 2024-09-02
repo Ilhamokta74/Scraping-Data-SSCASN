@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "0f88478c-9d06-4849-9568-8de00881866a",
+		"name": "SSCASN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36638071"
+	},
+	"item": [
+		{
+			"name": "Scraping Data S1-Informatika",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "host",
+						"value": "api-sscasn.bkn.go.id"
+					},
+					{
+						"key": "Origin",
+						"value": "https://sscasn.bkn.go.id",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-sscasn.bkn.go.id/2024/portal/spf?kode_ref_pend=5191141&offset=0",
+					"protocol": "https",
+					"host": [
+						"api-sscasn",
+						"bkn",
+						"go",
+						"id"
+					],
+					"path": [
+						"2024",
+						"portal",
+						"spf"
+					],
+					"query": [
+						{
+							"key": "kode_ref_pend",
+							"value": "5191141"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
