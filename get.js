@@ -43,7 +43,7 @@ const ambilDanSimpanData = async (apiUrl, namaFile, jumlahDataPerPermintaan, jum
         const mati = response.data.data.data[0].formasi_id;
 
       } catch (error) {
-        semuaData.sort((a, b) => new Date(a.jumlah_formasi) - new Date(b.jumlah_formasi));
+        semuaData.sort((a, b) => new Date(b.jumlah_formasi) - new Date(a.jumlah_formasi));
 
         // Menyimpan semua data ke dalam file JSON
         fs.writeFileSync(namaFile, JSON.stringify(semuaData, null, 2));
